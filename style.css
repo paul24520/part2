@@ -88,14 +88,14 @@ box-shadow: 0 0 30px;
 .nav-aside {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
 }
 .nav-aside__item--active {
 position: relative;
 }
 .nav-aside__item--active::before {
 content: "";
-top: -8px;
+top: -2px;
 left: -24px;
 position: absolute;
 width: 8px;
@@ -124,7 +124,7 @@ margin-left: auto;
 .footer-aside {
   margin-top: auto;
   padding-left: 20px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 .footer-aside__btn {
   display: flex;
@@ -155,4 +155,17 @@ padding: 0;
   display: flex;
   gap: 7px;
 }
+.nav-aside__item a {
+  padding: 8px;
+  cursor: pointer;
+}
+.nav-aside__item:hover,
+.action-button:hover,
+.mail:hover,
+.phone:hover, 
+.lang:hover {
+ opacity: 0.6;
+ transition-duration: 1.5s;
+}
+
 
